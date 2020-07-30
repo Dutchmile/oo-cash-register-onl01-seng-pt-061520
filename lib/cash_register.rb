@@ -1,4 +1,3 @@
-require 'pry'
 
 class CashRegister
 
@@ -42,3 +41,4 @@ class CashRegister
   end
 
 end
+
