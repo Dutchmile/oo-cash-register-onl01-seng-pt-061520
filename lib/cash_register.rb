@@ -10,13 +10,12 @@ attr_accessor :name, :items, :total, :discount, :last_item_amount
   end
 
   def add_item(name, price, quantity = 1)
-    @total += price*quantity
+    @total += price * quantity
     until quantity = 0
       @items << name
       quantity -= 1
-
     end
-    binding.pry
+    # binding.pry
     @last_item_amount = price
   end
 
