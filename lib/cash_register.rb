@@ -14,8 +14,9 @@ attr_accessor :name, :items, :total, :discount, :last_item_amount
     until quantity = 0
       @items << name
       quantity -= 1
-      binding.pry
+      
     end
+    binding.pry
     @last_item_amount = price
   end
 
