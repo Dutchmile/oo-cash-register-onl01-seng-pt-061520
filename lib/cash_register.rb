@@ -1,4 +1,4 @@
-
+require 'pry'
 class CashRegister
 
 attr_accessor :name, :items, :total, :discount, :last_item_amount
@@ -14,6 +14,7 @@ attr_accessor :name, :items, :total, :discount, :last_item_amount
     until quantity = 0
       @items << name
       quantity -= 1
+      binding.pry
     end
     @last_item_amount = price
   end
