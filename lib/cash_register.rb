@@ -28,4 +28,7 @@ attr_accessor :name, :items, :total, :discount, :last_item_amount
     end
   end
 
+  def items
+    @items
+
 end
